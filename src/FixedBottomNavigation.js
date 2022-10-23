@@ -33,7 +33,7 @@ export default function FixedBottomNavigation(props) {
           <BottomNavigation
             showLabels
           >
-            <BottomNavigationAction label="Change" icon={<ChangeCircleIcon />} href="/"/> 
+            <BottomNavigationAction label="Change" icon={<ChangeCircleIcon />} href="./"/> 
           </BottomNavigation>
         </Paper>
       </Box>
