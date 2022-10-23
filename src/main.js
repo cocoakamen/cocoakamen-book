@@ -27,7 +27,7 @@ function App() {
       "quotation" : "システムの設計や開発をした経験があるからといって、システムを安定稼働する仕組みが作れるとは限らない。",
       "bookTitle" : "日経コンピュータ. ポストモーテム みずほ銀行システム障害 事後検証報告",
       "amazonUrl" : "https://amzn.to/3CYq9cj",
-      "note" : "だよねー",
+      "note" : "aだよねー",
       "userName" : "cocoakamen"
     },
     {
