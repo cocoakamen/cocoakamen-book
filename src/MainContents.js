@@ -11,7 +11,9 @@ export default function MainContents(props) {
       <p>
         本の中で出会った。<br />
         心動いたフレーズをランダムに表示する。<br />
-        それだけです。
+        それだけです。<br />
+        <br />
+        現在の栞の数は{props.numOfBookMarks}コです。
       </p>
     );  
   } else {

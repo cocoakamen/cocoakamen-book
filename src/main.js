@@ -22,23 +22,6 @@ import MainContents from "./MainContents";
 
 function App() {
 
-  const bookMarkList = [
-    {
-      "quotation" : "システムの設計や開発をした経験があるからといって、システムを安定稼働する仕組みが作れるとは限らない。",
-      "bookTitle" : "日経コンピュータ. ポストモーテム みずほ銀行システム障害 事後検証報告",
-      "amazonUrl" : "https://amzn.to/3CYq9cj",
-      "note" : "だよねー",
-      "userName" : "cocoakamen"
-    },
-    {
-      "quotation" : "ランシエールは人間の意志がそれほど強くないことを知っています。好き勝手させておけば人が自由に学び始めるなどと楽観的なことは決して言いません。しかし教師は、生徒に対する特権的な知を有しているのではない、という態度を徹底しなければなりません。",
-      "bookTitle" : "渡辺健一郎. 自由が上演される",
-      "amazonUrl" : "https://amzn.to/3SmY6rh",
-      "note" : "意志の弱さをどうにかするのが教師ってことかな。",
-      "userName" : "cocoakamen"
-    }
-  ]
-
   const [error, setError] = useState(null);
   const [isLoaded, setIsLoaded] = useState(false);
   const [bookMarks, setBookMarks] = useState([]);
@@ -52,6 +35,19 @@ function App() {
     return randomIndex;
   }
 
+  /**
+
+  bookMarks.jsonからデータ取得
+  {
+    "quotation" : "",
+    "bookTitle" : "",
+    "amazonUrl" : "",
+    "note" : "",
+    "userName" : ""
+  }
+
+  */
+ 
   // Note: the empty deps array [] means
   // this useEffect will run once
   // similar to componentDidMount()
@@ -116,7 +112,11 @@ function App() {
           }}
         >
   
-          <MainContents type={mainContentsType} bookMark={bookMarks[bookMarkIndex]} />
+          <MainContents
+            type={mainContentsType}
+            bookMark={bookMarks[bookMarkIndex]}  
+            numOfBookMarks = {bookMarks.length}
+          />
   
         </Box>
         <FixedBottomNavigation  
