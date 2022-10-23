@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "scripts": {
     "build": "webpack --config webpack.config.js -w",
-    "build:css": "webpack --config webpack.config.css.js -w"
+    "build:prd": "webpack --config webpack.config.prd.js"
   },
   "private": true,
   "devDependencies": {
